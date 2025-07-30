@@ -179,7 +179,7 @@ elif halaman == "🧬 Tabel Periodik":
     st.markdown("### Aktinida")
     tampilkan_baris(aktinida + [""] * (18 - len(aktinida)), "aktinida")
 
-    if st.session_state.selected
+    if st.session_state.selected:
         sim = st.session_state.selected
         ar = massa_atom.get(sim, "Tidak ditemukan")
         st.success(f"{sim} → Ar = {ar}")
