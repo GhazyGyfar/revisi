@@ -180,7 +180,18 @@ elif halaman == "🧬 Tabel Periodik":
     tampilkan_baris(aktinida + [""] * (18 - len(aktinida)), "aktinida")
 
     if st.session_state.selected:
-        sim = st.session_state.selected
+        sim = ["Hidrogen", "Helium", "Litium", "Berilium", "Boron", "Karbon", "Nitrogen", "Oksigen", "Fluorin", "Neon",
+    "Natrium", "Magnesium", "Aluminium", "Silikon", "Fosfor", "Belerang", "Klorin", "Argon", "Kalium", "Kalsium",
+    "Skandium", "Titanium", "Vanadium", "Kromium", "Mangan", "Besi", "Kobalt", "Nikel", "Tembaga", "Seng",
+    "Galium", "Germanium", "Arsen", "Selenium", "Bromin", "Kripton", "Rubidium", "Stronsium", "Yttrium", "Zirkonium",
+    "Niobium", "Molibdenum", "Teknesium", "Rutenium", "Rodium", "Paladium", "Perak", "Kadmium", "Indium", "Timah",
+    "Antimon", "Telurium", "Iodin", "Xenon", "Sesium", "Barium", "Lantanum", "Serium", "Praseodimium", "Neodimium",
+    "Prometium", "Samarium", "Europium", "Gadolinium", "Terbium", "Disprosium", "Holmium", "Erbium", "Tulium", "Iterbium",
+    "Lutetium", "Hafnium", "Tantalum", "Wolfram", "Renium", "Osmium", "Iridium", "Platina", "Emas", "Raksa",
+    "Talium", "Timbal", "Bismut", "Polonium", "Astatin", "Radon", "Fransium", "Radium", "Aktinium", "Torium",
+    "Protaktinium", "Uranium", "Neptunium", "Plutonium", "Amerisium", "Kurium", "Berkelium", "Kalifornium", "Einsteinium", "Fermium",
+    "Mendelevium", "Nobelium", "Lawrensium", "Rutherfordium", "Dubnium", "Seaborgium", "Bohrium", "Hassium", "Meitnerium", "Darmstadtium",
+    "Roentgenium", "Kopernisium", "Nihonium", "Flerovium", "Moskovium", "Livermorium", "Tenesin", "Oganeson"]
         ar = massa_atom.get(sim, "Tidak ditemukan")
         st.success(f"{sim} → Ar = {ar}")
         st.markdown(f"<h1 style='text-align: center; font-size: 80px;'>{sim}</h1>", unsafe_allow_html=True)
